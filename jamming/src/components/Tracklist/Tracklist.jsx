@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import Track from '../Track/Track.jsx';
 
-function Tracklist ( {tracks, onAdd} ) {
+function Tracklist ( {tracks, onAdd, onRemove} ) {
     return (
         <div>
             {tracks.map(track => (
@@ -11,6 +11,7 @@ function Tracklist ( {tracks, onAdd} ) {
              artist= {track.artist}
              album= {track.album}
              onAdd={onAdd}
+             onRemove={onRemove}
              />
             ))}
         </div>

@@ -5,7 +5,9 @@ function SearchResults( {tracks,  onAdd } ) {
     return (
         <div>
             <h2> Search Results </h2>
-            <Tracklist tracks={tracks} onAdd= {onAdd}/>
+            <Tracklist tracks={tracks} 
+            onAdd= {onAdd}/>
+
         </div>
     );
 }

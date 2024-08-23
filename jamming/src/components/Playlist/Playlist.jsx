@@ -13,6 +13,7 @@ function Playlist ({ name, tracks, onRemove, onNameChange }) {
     return (
     <div>
         <h2>
+            <label> Playlist Name: </label>
             <input 
             type= "text"
             value= {newName}
