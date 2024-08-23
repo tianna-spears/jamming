@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-function Track ( {name, artist, album} ) {
+
+function Track ( {track, onAdd} ) {
     return (
      <div>
-        <p> Track: {name} </p>
-        <p> Artist: {artist} </p>
-        <p> Album: {album} </p>
+        <p> {track.name} by {track.artist} from {track.album}</p>
+     <button onClick={() => onAdd(track)}> Add </button>
      </div>
     )
 }
