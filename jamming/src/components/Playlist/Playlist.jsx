@@ -27,7 +27,7 @@ function Playlist ({ name, tracks, onRemove, onNameChange }) {
     return (
     <div>
         <h2>
-        {showEditButton ? (
+        {edit ? (
             <label> Playlist Name:
             <input 
             type= "text"
@@ -42,7 +42,7 @@ function Playlist ({ name, tracks, onRemove, onNameChange }) {
         )}
         </h2>
         {!showEditButton && (
-            <button onClick={handleEdit}> Edit Playlist Name</button>
+            <button onClick={handleEdit}> Edit Playlist</button>
         )
 
         }
