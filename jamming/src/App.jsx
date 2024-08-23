@@ -45,7 +45,9 @@ function App() {
 
     return (
       <div>
-        <h1> Jamming, Kanban Project by Codecademy </h1>
+        <h3> Off-Platform Codecademy Project </h3>
+          <h2> Jamming, a website that allows users to search Spotify&apos;s library, 
+            <br />create a custom playlist, and save it to their Spotify account. </h2>
 
         <SearchResults 
         tracks={tracks} 
@@ -59,9 +61,9 @@ function App() {
         onNameChange={updatePlaylistName}
         onChange={updateTracks}
         />
-
+  
         <button onClick={savePlaylist}>Save to Spotify</button>
-      </div>
-    );
-}
+    </div>
+    )};
+
 export default App;
